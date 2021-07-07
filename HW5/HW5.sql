@@ -86,7 +86,7 @@ Create Table TblReview
 	ItemID char(6) NOT NULL,
 	Foreign Key(OrderID,ItemID) references tblOrderLine(OrderID,ItemId)
 	);
-	
+
 Create Table TblShipLine
 	( 
 	ShipLineID int Primary Key IDENTITY(100,1),
