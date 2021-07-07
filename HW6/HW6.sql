@@ -146,17 +146,3 @@ SELECT	OrderID 'Order Number',
 	    getdate() 'Current Date and Time'
 FROM        TblOrder
 WHERE       DATEDIFF(day,OrderDate, getdate())>50
-
-
-
-
-
-
-
-
-
-
-
-
-
-
