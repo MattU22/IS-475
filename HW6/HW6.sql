@@ -1,5 +1,5 @@
 --1)SQL Code
-SELECT	(FirstName + ' ' + LastName) CustomerName,
+SELECT  (FirstName + ' ' + LastName) CustomerName,
 		Phone CustomerPhone,
 		City,
 		State,
@@ -10,7 +10,7 @@ WHERE       State  = 'ca'
 ORDER BY    LastName;
 
 --2)SQL Code
-SELECT	(LastName + ', ' + SUBSTRING(FirstName,1,1) + '.') 'Customer Name',
+SELECT  (LastName + ', ' + SUBSTRING(FirstName,1,1) + '.') 'Customer Name',
         '(' + SUBSTRING(Phone,1,3) + ') ' + SUBSTRING(Phone,4,3) + '-' + SUBSTRING(Phone,7,4) 'Phone Number',
 	    UPPER(City) City,
 	    UPPER(State) State,
